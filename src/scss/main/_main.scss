@@ -62,10 +62,10 @@
 	
 }
 .main__menu-link {
-	
 	flex: none;
 	padding: 8px 17px;
 	border-radius: 6px;
+	border: 1px solid transparent;
 	&:hover {
 		box-sizing: border-box;
 		border: 1px solid #B8FFEC;
