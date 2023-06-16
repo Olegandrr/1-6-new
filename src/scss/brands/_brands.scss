@@ -1,0 +1,139 @@
+.brands {
+  border-top: 1px solid #d9fff5;
+
+
+
+&__item {
+  width: 239px !important;
+  height: 72px !important;
+}
+
+&__card {
+  margin-left: 16px;
+}
+
+&__button--img {
+  margin-right: 16px;
+}
+}
+
+@media (min-width: 768px) {
+  .brands__header {
+    max-width: 768px;
+    height: 56px;
+  }
+ 
+
+  .brands__item {
+    margin-top: 0;
+    margin-left: 0;
+    width: 222px !important;
+    height: 72px !important;
+  }
+
+  .brands__item--hide {
+    display: none;
+  
+}
+  .item--show {
+    display: flex;
+    -webkit-animation-name: open;
+    animation-name: open;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes open {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes open {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .item--close {
+    -webkit-animation-name: close;
+    animation-name: close;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes close {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes close {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+@media (min-width: 950px) { 
+  .brands__item {
+    margin-top: 0;
+    margin-left: 0;
+    width: 215px !important;
+    height: 72px !important;
+  }
+  
+  .brands__item-1120--show {
+    display: flex;
+    -webkit-animation-name: show;
+    animation-name: show;
+    -webkit-animation-duration: 0ms;
+    animation-duration: 0ms;
+  }
+
+  @-webkit-keyframes show {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes show {
+    to {
+      opacity: 1;
+    }
+  }
+
+}
+
+@media (min-width: 1440px) { 
+  .brands__header {
+    width: 1120px;
+  }
+
+  .brands__title {
+    padding-left: 32px;
+  }
+
+
+  .brands__item {
+    width: 240px !important;
+    height: 72px !important;
+  }
+  
+}

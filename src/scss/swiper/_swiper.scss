@@ -1,0 +1,52 @@
+.swiper-container {
+  position: relative;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  background-color: #dddddd;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+.devices .swiper-container {
+  height: 228px;}
+
+  .price .swiper-container {
+    height: 260px;
+  }
+
+  .swiper-pagination {
+    padding-bottom: 16px;
+  }
+
+@media (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+
+  .devices .swiper-container {
+    height: auto;}
+
+  .swiper-container {
+    background-color: $background-color_2;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1440px) { 
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+}
